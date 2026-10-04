@@ -1,0 +1,62 @@
+@layer components {
+  .btn-3d {
+    --btn-color: oklch(70.5% 0.213 47.604);
+    --btn-color-dark: oklch(55.3% 0.195 38.402);
+
+    background: var(--btn-color);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+    padding: 15px 35px;
+    cursor: pointer;
+    box-shadow: 0px 8px var(--btn-color-dark);
+    transition: 0.15s;
+    font-family: inherit;
+
+    &:hover {
+      transform: translateY(3px);
+      box-shadow: 0px 3px var(--btn-color-dark);
+    }
+
+    &:active {
+      transform: translateY(6px);
+      box-shadow: 0 0 0 var(--btn-color-dark);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+      box-shadow: 0px 8px var(--btn-color-dark);
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--btn-color-dark);
+      outline-offset: 3px;
+    }
+  }
+
+  .btn-primary {
+    --btn-color: oklch(55% 0.22 275);
+    --btn-color-dark: oklch(35% 0.17 275);
+  }
+
+  .btn-secondary {
+    --btn-color: oklch(55% 0.03 255);
+    --btn-color-dark: oklch(35% 0.03 255);
+  }
+
+  .btn-success {
+    --btn-color: oklch(62% 0.17 150);
+    --btn-color-dark: oklch(40% 0.12 150);
+  }
+
+  .btn-danger,
+  .btn-error {
+    --btn-color: oklch(58% 0.22 27);
+    --btn-color-dark: oklch(38% 0.15 27);
+  }
+}

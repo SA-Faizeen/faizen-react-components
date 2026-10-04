@@ -1,0 +1,6 @@
+@layer components {
+	.dFlex{
+		display: flex;
+		align-items: center;
+	}
+}
