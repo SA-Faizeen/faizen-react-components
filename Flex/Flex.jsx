@@ -1,6 +1,6 @@
 import "./Flex.css"
 
-const Flex = ({ className, id, children }) => {
+const Flex = ({ className="", id, children }) => {
 	return (
 		<div className={`dFlex ${className}`} id={id}>
 			{children}
