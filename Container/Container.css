@@ -1,0 +1,6 @@
+@layer components {
+	#container {
+		max-width: 82.5rem;
+		margin: 0 auto;
+	}
+}
